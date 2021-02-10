@@ -32,6 +32,8 @@ void Showinfos(); // on crée une fonction ici dans la bibli pour pouvoir l'appel
 
 void Fight(Zombie *cible);// pareil on crée une fonction fight pour l'apeller plus tard
 
+void Show_stat_after_fight(); // on crée une fcontion pour avoir les stats après le fight du coup c'est cool
+
        private: // on encapsule les paramètres que on veut ne pas modifier de base
 
        int pv = 40;

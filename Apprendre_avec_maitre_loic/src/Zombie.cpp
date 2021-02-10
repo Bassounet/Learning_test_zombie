@@ -12,7 +12,7 @@ Zombie::Zombie(){ // on génère les zombies par défaut :: permet de faire le lien
 
 Zombie::Zombie(string n, int p, int atk){
 
-    cout <<"Voici un nouveau Zombie" <<endl<<endl;
+    cout <<"Creeons un nouveau Zombie" <<endl<<endl;
 
     name = n ;
     pv = p;
@@ -54,9 +54,9 @@ void Zombie::setName(string n)
 
 void Zombie::Showinfos()
 {
-    cout<<"Le nombre de Pv est : "<< getPv()<<endl;
-    cout <<"Sa force est de : "<< getAttack() <<endl;
-    cout <<"Son nom est " << getName() <<endl<<endl;
+    cout <<"Son nom est " << getName() <<endl;
+    cout<<"Le nombre de Pv de "<<getName()<<" est : "<< getPv()<<endl;
+    cout <<"La force de "<< getName()<< " est de : " << getAttack() <<endl<<endl;
 
 }
 
