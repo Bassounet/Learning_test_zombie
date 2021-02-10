@@ -55,7 +55,7 @@ void Zombie::setName(string n)
 void Zombie::Showinfos()
 {
     cout <<"Son nom est " << getName() <<endl;
-    cout<<"Le nombre de Pv de "<<getName()<<" est : "<< getPv()<<endl;
+    cout <<"Le nombre de Pv de "<<getName()<<" est : "<< getPv()<<endl;
     cout <<"La force de "<< getName()<< " est de : " << getAttack() <<endl<<endl;
 
 }
@@ -66,4 +66,8 @@ void Zombie::Fight(Zombie *cible)
 
     cible->setPv(cible->getPv()-attack);
 
+    cout <<"outch le combat a fait rage "<<endl;
+    cout <<"La preuve voyez ses nouveaux Pv : "<< cible->getPv()<<" ca fait mal ... " << endl;
+
 }
+
